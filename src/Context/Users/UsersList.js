@@ -11,7 +11,7 @@ function UsersList() {
         setUsersData(updatedUserList);
         localStorage.removeItem('users');
         localStorage.setItem('users',JSON.stringify(updatedUserList));
-        history.go(0);
+        //history.go(0);
     }
 
     return (
@@ -64,3 +64,5 @@ function UsersList() {
 }
 
 export default UsersList
+
+

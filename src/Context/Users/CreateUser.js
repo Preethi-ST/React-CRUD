@@ -11,14 +11,14 @@ function CreateUser() {
 
     // For edit Users
     let edituser={}; 
-    let editUId =  useParams();
+    let editUId =  useParams(); 
     if(history.location.pathname.includes('editUser')){
         let user = localdata.filter(data => data.uid === editUId.uid);
         edituser = user[0];
         console.log(edituser)
     }
 
-    /* Assigning initial values based on -EDIT or CREATE */
+    /* Assigning initial values based on -EDIT or CREATE */ generateUniqueId()
     let userid = history.location.pathname.includes('editUser') ? edituser.id : generateUniqueId({
         length: 4,
         useLetters: false

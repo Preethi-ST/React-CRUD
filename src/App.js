@@ -10,7 +10,7 @@ import CreateUser from './Context/Users/CreateUser';
 function App() {
   return (
     <>
-    <BrowserRouter basename='/React-CRUD'>
+    <BrowserRouter basename='/React-CRUD'> 
       <div id="wrapper">
         <DashboardSidebar />
         <div id="content-wrapper" className="d-flex flex-column">
